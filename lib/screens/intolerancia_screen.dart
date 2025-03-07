@@ -54,9 +54,20 @@ class _IntoleranciaScreenState extends State<IntoleranciaScreen> {
                           .get()
                           .then((querySnapshot) {
                         if (querySnapshot.docs.isEmpty) {
+                             QuickAlert.show(
+                            context: context,
+                            type: QuickAlertType.success,
+                            title: 'Heecho',
+                            text: 'La intolerancia se ha añadido en la base de datos',
+                          );
                           _fetchData();
                         } else {
-                          return;
+                          QuickAlert.show(
+                            context: context,
+                            type: QuickAlertType.error,
+                            title: 'Error',
+                            text: 'La intolerancia ya existe en la base de datos',
+                          );
                         }
                       });
                     }

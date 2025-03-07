@@ -28,6 +28,7 @@ class _DeleteScreenState extends State<DeleteScreen> {
       }).toList().cast<String>();
     });
   }
+  
   void _deleteIntolerance(int index) {
     FirebaseFirestore.instance.collection('intolerancias_ismael').get().then((snapshot) {
       snapshot.docs[index].reference.delete();
@@ -50,7 +51,8 @@ class _DeleteScreenState extends State<DeleteScreen> {
             title: Text(intolerances[index]),
             trailing: IconButton(
               icon: Icon(Icons.delete),
-              onPressed: () => _deleteIntolerance(index),
+              onPressed: () => {_deleteIntolerance(index), _fetchData()},
+              
             ),
           );
         },
@@ -58,7 +60,6 @@ class _DeleteScreenState extends State<DeleteScreen> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.refresh),
         onPressed: _fetchData,
-          
       ),
     );
   }
