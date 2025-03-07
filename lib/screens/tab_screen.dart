@@ -1,5 +1,6 @@
 import 'package:NutriMate/models/usuario.dart';
 import 'package:NutriMate/providers/user_provider.dart';
+import 'package:NutriMate/screens/delete_screen.dart';
 import 'package:NutriMate/screens/intolerancia_screen.dart';
 import 'package:NutriMate/screens/screens.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,7 @@ class TabScreen extends StatelessWidget {
       ),
       CaloriasChart(),
       IntoleranciaScreen(),
+      DeleteScreen(),
       SettingsScreen(usuario: usuario),
       //aquí iría el config screen
     ];
@@ -61,6 +63,13 @@ class TabScreen extends StatelessWidget {
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.warning),
         title: "Intolerancias",
+        activeColorPrimary: const Color(0xFF00B894),
+        activeColorSecondary: Colors.black,
+        inactiveColorPrimary: const Color.fromARGB(255, 40, 38, 38),
+      ),
+      PersistentBottomNavBarItem(
+        icon: const Icon(Icons.delete),
+        title: "Eliminar",
         activeColorPrimary: const Color(0xFF00B894),
         activeColorSecondary: Colors.black,
         inactiveColorPrimary: const Color.fromARGB(255, 40, 38, 38),
