@@ -55,6 +55,11 @@ class _DeleteScreenState extends State<DeleteScreen> {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.refresh),
+        onPressed: _fetchData,
+          
+      ),
     );
   }
 }

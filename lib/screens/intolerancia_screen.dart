@@ -45,11 +45,20 @@ class _IntoleranciaScreenState extends State<IntoleranciaScreen> {
                 child: Text("Añadir"),
                   onPressed: () {
                     if (intoleranciaController.text.isEmpty || intoleranciaController.text.length < 3) {
-                      Text("Intolerancia no válida");
+              
                       return;
                     } else {
-                      Text("Intolerancia añadida");
-                      _fetchData();
+                      FirebaseFirestore.instance
+                          .collection('intolerancias_ismael')
+                          .where('intolerancia', isEqualTo: intoleranciaController.text)
+                          .get()
+                          .then((querySnapshot) {
+                        if (querySnapshot.docs.isEmpty) {
+                          _fetchData();
+                        } else {
+                          return;
+                        }
+                      });
                     }
                 })
               ]
