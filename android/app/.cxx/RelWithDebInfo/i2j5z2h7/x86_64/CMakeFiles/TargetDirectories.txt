@@ -1,0 +1,2 @@
+/Volumes/MacExt/fl_nutrimate/android/app/.cxx/RelWithDebInfo/i2j5z2h7/x86_64/CMakeFiles/edit_cache.dir
+/Volumes/MacExt/fl_nutrimate/android/app/.cxx/RelWithDebInfo/i2j5z2h7/x86_64/CMakeFiles/rebuild_cache.dir

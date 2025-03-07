@@ -1,0 +1,25 @@
+class Recipe {
+  final String name;
+  final String imageUrl;
+  final List<String> instructions;
+  final MealType type;
+  final List<Map<String, dynamic>> ingredients;
+  final double calories,
+  final double proteins,
+  final double carbohydrates,
+  final double fats,
+}
+
+class Customer {
+    final String firstName, 
+    final String lastNames,
+    final IconData avatar,
+    final String email,
+    final String password,
+    final bool admin,
+    final List<DailyMeal> weeklyMenu,
+}
+
+class DailyMeal {
+    final List<Recipe> recipes,
+}

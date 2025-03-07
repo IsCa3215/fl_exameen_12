@@ -1,0 +1,2 @@
+C:/Users/otero/Desktop/fl_nutrimate/android/app/.cxx/Debug/1o3z144u/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/otero/Desktop/fl_nutrimate/android/app/.cxx/Debug/1o3z144u/armeabi-v7a/CMakeFiles/rebuild_cache.dir

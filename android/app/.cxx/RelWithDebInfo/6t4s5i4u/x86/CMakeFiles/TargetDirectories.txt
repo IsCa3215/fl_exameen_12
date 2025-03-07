@@ -1,0 +1,2 @@
+/Users/juanjobueno/Desktop/fl_nutrimate-1/android/app/.cxx/RelWithDebInfo/6t4s5i4u/x86/CMakeFiles/edit_cache.dir
+/Users/juanjobueno/Desktop/fl_nutrimate-1/android/app/.cxx/RelWithDebInfo/6t4s5i4u/x86/CMakeFiles/rebuild_cache.dir

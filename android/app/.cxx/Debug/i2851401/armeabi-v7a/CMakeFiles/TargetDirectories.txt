@@ -1,0 +1,2 @@
+C:/Users/guillermo/Documents/PMDMO/fl4/fl_nutrimate/android/app/.cxx/Debug/i2851401/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/guillermo/Documents/PMDMO/fl4/fl_nutrimate/android/app/.cxx/Debug/i2851401/armeabi-v7a/CMakeFiles/rebuild_cache.dir

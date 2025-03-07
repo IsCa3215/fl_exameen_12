@@ -1,0 +1,2 @@
+C:/Users/guillermo/Documents/PMDMO/fl_nutrimate2/fl_nutrimate/android/app/.cxx/Debug/i182z371/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/guillermo/Documents/PMDMO/fl_nutrimate2/fl_nutrimate/android/app/.cxx/Debug/i182z371/x86_64/CMakeFiles/rebuild_cache.dir
