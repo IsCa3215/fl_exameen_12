@@ -7,6 +7,8 @@
  */
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:quickalert/models/quickalert_type.dart';
+import 'package:quickalert/widgets/quickalert_dialog.dart';
 
 class IntoleranciaScreen extends StatefulWidget {
   const IntoleranciaScreen({super.key});
@@ -42,9 +44,11 @@ class _IntoleranciaScreenState extends State<IntoleranciaScreen> {
                 FloatingActionButton(
                 child: Text("Añadir"),
                   onPressed: () {
-                    if (intoleranciaController.text.isEmpty) {
+                    if (intoleranciaController.text.isEmpty || intoleranciaController.text.length < 3) {
+                      Text("Intolerancia no válida");
                       return;
                     } else {
+                      Text("Intolerancia añadida");
                       _fetchData();
                     }
                 })
